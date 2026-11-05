@@ -28,12 +28,10 @@ h3 { font-size: 1.45rem; margin: 0 0 .8rem; }
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 25px; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 12px; min-height: 44px; font-weight: 700; text-decoration: none; color: var(--ink); }
 .brand img { width: 44px; height: 44px; border-radius: 12px; box-shadow: 0 2px 3px #38291519; }
-.header-links, .page-nav, .language-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+.header-links, .page-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
 .header-links { gap: 18px; }
-.page-nav a, .language-nav a { display: inline-flex; min-height: 44px; min-width: 44px; align-items: center; justify-content: center; padding: 8px 12px; border-radius: 9px; text-decoration: none; font-size: .92rem; }
+.page-nav a { display: inline-flex; min-height: 44px; min-width: 44px; align-items: center; justify-content: center; padding: 8px 12px; border-radius: 9px; text-decoration: none; font-size: .92rem; }
 .page-nav a[aria-current="page"] { background: var(--soft); font-weight: 650; }
-.language-nav { border-left: 1px solid var(--line); padding-left: 12px; }
-.language-nav a[aria-current="true"] { color: var(--ink); font-weight: 750; text-decoration: underline; }
 .intro { display: grid; grid-template-columns: minmax(0, 1fr) 230px; align-items: center; gap: 50px; padding: 68px 0 56px; }
 .eyebrow { color: var(--forest); font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 750; }
 .lead { max-width: 620px; color: var(--muted); font-size: 1.14rem; line-height: 1.65; }
@@ -92,8 +90,7 @@ details[open] summary::after { background: linear-gradient(var(--forest), var(--
 @media (max-width: 560px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 12px; padding-block: 18px; }
   .header-links { width: 100%; justify-content: space-between; gap: 8px; }
-  .page-nav a, .language-nav a { padding-inline: 10px; }
-  .language-nav { padding-left: 8px; }
+  .page-nav a { padding-inline: 10px; }
   .intro { position: relative; grid-template-columns: minmax(0, 1fr); gap: 0; padding-top: 34px; }
   .intro-art { width: 94px; position: absolute; right: 3px; top: 27px; border-radius: 24px; padding: 5px; }
   .intro-art img { border-radius: 19px; }
